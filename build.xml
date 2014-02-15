@@ -56,7 +56,7 @@
         
         <!-- Download forge (if it doesn't exist) -->
         <target name="download-forge" unless="forge-exists" >
-                  <get src="http://files.minecraftforge.net/maven/net/minecraftforge/forge/${mc.version}/${forge.name}" dest="${download.dir}" usetimestamp="True"/>
+                  <get src="http://files.minecraftforge.net/maven/net/minecraftforge/forge/${mc.version}-${forge.version}/${forge.name}" dest="${download.dir}" usetimestamp="True"/>
         </target>
 
         <!-- Setup mcp and forge -->
