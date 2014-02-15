@@ -54,6 +54,11 @@ public class TileEntityIndustrialCraftProducer extends TileEntityEnergyProducer<
             _isAddedToEnergyNet = true;
         }
     }
+    
+    @Override
+    public void onChunkUnload() {
+    	invalidate();
+    }
 
     @Override
     public void readFromNBT(NBTTagCompound tag) {
